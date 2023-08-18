@@ -1,0 +1,1390 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap');
+
+:root {
+    --mdc-theme-primary: #000000!important;
+}
+
+.mdc-floating-label {
+  color: #000000!important;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+button{
+    font-weight: bold;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+}
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid #D9D9D9;
+    padding: 0 30px;
+}
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100%;
+    height: 50px;
+}
+
+.logo svg {
+    width: 45px;
+    height: 45px;
+    margin-left: 50px;
+}
+
+.logo h2 {
+    font-size: 19px;
+    margin-left: 30px;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+}
+
+.header-content h2 {
+    font-size: 19px;
+    margin-right: 10px;
+}
+
+.header-content p {
+    font-size: 15px;
+}
+
+.header-content svg {
+    cursor: pointer; 
+    margin-bottom: 20px;
+}
+
+.info{
+display: flex;
+flex-direction: column;
+}
+
+
+.options-card {
+    margin-right: 30px;
+    height: 160px;
+    width: 300px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 1000;
+}
+
+.options-list {
+    list-style: none;
+    padding: 0;
+}
+
+.options-list li {
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+
+
+.options-card.show {
+    display: block;
+}
+
+.options-card p {
+    margin-bottom: 10px;
+}
+
+.options-card ul {
+    border-top: 1px solid #D9D9D9;
+}
+
+.options-list li {
+    font-size: 15px;
+    padding-left: 10px; 
+}
+
+.options-list a{
+    color: black;
+}
+
+.options-list li.logout{
+display: flex;
+align-items: center;
+margin-bottom: 0;
+padding: 0 10px;
+}
+
+.logout svg {
+    width:18px;
+    height: 18px;
+    margin-left: 1px;
+    margin-top: 14px;
+    vertical-align: middle;
+}
+
+
+
+.container{
+align-items: center;
+justify-content: center;
+padding: 10px 100px;
+display: flex;
+width: 100%;
+border-bottom: 1px solid #D9D9D9;
+}
+
+.info-usuario{
+    
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+.mdc-text-field{
+   width: 240px;
+   height: 40px;
+}
+
+.edit-container{
+    display: flex;
+    align-items: center;
+    
+}
+
+.edit-container svg{
+    width: 22px;
+    margin-left: 20px;
+    display: flex;
+   align-items: center;
+}
+
+.edit-container a {
+    font-size: 15px;
+    color: black;
+   display: flex;
+   align-items: center;
+}
+
+.container-crud{
+    padding: 20px 200px;
+}
+.div-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+}
+
+.div-content h2{
+    font-size: 21px;
+}
+
+.div-content .mdc-button{
+    background-color: black;
+    color: rgb(242, 237, 237);
+    margin-right: 20px;
+}
+
+.id-nome{
+    display: flex;
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+}
+
+.id-nome h3{
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+
+
+.name{
+    font-size: 16px;
+    margin-left: 30px;
+}
+
+.edit svg{
+    display: flex;
+    align-items: center;
+    width: 22px;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+
+
+.btns-actions{
+    margin-left: 20px;
+}
+
+.btns-actions button {
+    margin-left: 20px;
+}
+
+.btns-actions .btn-menor{
+    width: 32px;
+}
+
+
+
+.icon-delete svg{
+    width:25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 40px;
+}
+
+footer{
+  
+    margin-top: 30px;
+    border-top: 1px solid #D9D9D9;
+    height: 40px;
+    width: 100%;
+}
+
+footer p {
+    margin-right: 10px;
+    margin-top: 8px;
+    float: right;
+    font-size: 14px;
+    color: #a3a2a2;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Para empilhar os elementos verticalmente */
+        padding: 10px; /* Ajustar o espaçamento interno para melhorar a visualização */
+        height: auto; /* Redefinir a altura para se ajustar ao conteúdo */
+    }
+
+    .logo {
+        justify-content: center; /* Centralizar o logo verticalmente */
+        margin-bottom: 10px; /* Adicionar um espaço entre o logo e a header-content */
+    }
+
+   
+    .logo img {
+        width: 100%;
+        height: 30px;
+        
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; /* mudança aqui*/
+    }
+
+    .header-content {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center; /* Centralizar horizontalmente */ 
+    }
+
+    .options-card {
+        margin-left: 35px;
+        height: 190px;
+        width: 330px;
+        top: 130px; /* Afastar o card da parte superior */
+        left: 0; /* Alinhar o card à esquerda */
+        padding: 10px; /* Ajustar o espaçamento interno para melhorar a visualização */
+      
+    }
+
+
+   .options-list{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+   }
+   
+   li.option-item{
+    padding: 20px 15px;
+   }
+
+   li.logout{
+    padding: 5px;
+   }
+
+    .options-list li {
+        cursor: pointer;       
+    }
+
+    .options-list li.logout{
+       text-align: center;
+       display: flex;
+       
+       justify-content: center;
+    }
+
+
+    
+.info-usuario{
+    margin-right: 10px;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+
+.mdc-text-field{
+   width: 220px;
+   height: 40px;
+}
+
+
+.container{
+padding: 10px 30px;
+display: block;
+text-align: center;
+align-items: center;
+justify-content: center;
+width: 100%;
+border-bottom: 1px solid #D9D9D9;
+}
+
+.edit-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.edit-container svg{
+    width: 22px;
+    margin-left: 20px;
+    display: flex;
+   align-items: center;
+}
+
+.edit-container a {
+    font-size: 15px;
+    color: black;
+   display: flex;
+   align-items: center;
+}
+
+
+.container-crud{
+    padding: 10px 10px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+.div-content{
+    display: flex;
+   justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div-content h2{
+    margin-left: 18px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.div-content .mdc-button{
+    font-size: 10px;
+    width: 100px;
+    background-color: black;
+    color: rgb(242, 237, 237);
+
+    
+}
+
+.id-nome{
+    font-size: 13px;
+    display: flex;
+    margin-top: 30px;
+    border-bottom: 2px solid black;
+}
+
+.id-nome h3{
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+
+
+.name{
+    font-size: 13px;
+    margin-left: 30px;
+}
+
+
+.btns-actions{
+  display: block;
+
+}
+
+.btns-actions .btn-menor{
+    width: 12px;
+    height: 27px;
+    font-size: 10px;
+}
+
+.btns-actions button {
+   width: 42px;
+   font-size: 10px;
+}
+
+
+.icon-delete svg{
+    width:25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    border-top: 1px solid #D9D9D9;
+    height: 40px;
+    width: 100%;
+}
+
+footer p {
+    font-size: 11px;
+    color: #a3a2a2;
+}   
+
+
+}
+
+
+/* COMEÇANDO AQUI O STYLE DA SEGUNDA TELA*/
+
+
+
+
+.div-logo{
+   display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-logo img{
+  margin-right: 40px;
+ 
+}
+
+.div-logo .logo-seta{
+   
+    width: 30px;
+    height: 30px;
+}
+
+.div-logo h2{
+    font-size: 19px;
+    padding: 0 20px;
+   
+}
+
+.pai-menu{
+    position: relative;
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 320px;
+    height: auto;
+    background-color: #D9D9D9;
+}
+
+.menu-content{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.menu-content svg{
+    width: 19px;
+    height: 19px;
+    vertical-align: middle;
+    align-items: center;
+    text-align: center;
+   margin-bottom: 2px;
+}
+
+.menu-content .btn-import{
+    text-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+
+.pai-menu-mobile .menu-content {
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: auto;
+    margin-left: 50px;
+    padding-top: 20px;
+    background-color: #D9D9D9;
+    padding: 20px 10px;
+    z-index: 1000;
+}
+
+
+
+.mobile-menu-button {
+    transform: translateY(-50%);
+    display: none;
+    position: absolute;
+    top: 85px;
+    left: 52px;
+    cursor: pointer;
+    
+}
+
+
+
+#additional-buttons {
+    display: none;
+}
+
+.content-global{
+   display: flex;
+}
+
+
+
+.content-options{
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid #D9D9D9;
+    height: 100px;
+    width: 100%;
+    align-items: center;
+}
+
+.content-options h2{
+    font-size: 21px;
+}
+
+.content-um{
+    padding: 30px 0 0 20px;
+}
+
+.content-dois{
+    padding: 10px 15px 0  20px;
+    
+   
+}
+
+.content-dois p {
+    padding: 3px 0;
+    font-size: 19px;
+ 
+}
+
+.input-btns{
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+}
+
+
+.container-content-main{
+    display: block;
+    width: 80%;
+}
+
+.input-btns input{
+    padding: 8px;
+    width: 300px;
+    height: 38px;
+    border-radius: 8px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    margin-right: 1px;
+}
+
+.input-btns button{
+    margin-right: 10px;
+}
+
+  
+.input-btns {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+.input-svg {
+    position: relative;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-svg input[type=text] {
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+.input-svg svg {
+    position: absolute;
+    right: 10px; 
+    width: 40px;
+    height: auto;
+    top: 5px;
+   
+}
+
+.input-svg .custom-button {
+    border: none;
+    cursor: pointer;
+}
+
+
+.modal-id{
+    margin-left: 40px;
+    width: 90%;
+    display: flex;
+    margin-top: 40px;
+    border-bottom: 2px solid black;
+}
+
+.modal-id h3{
+    font-size: 17px;
+    margin-bottom: 10px;
+   
+}
+
+.edit-dois{
+    margin-left: 30px;
+}
+
+.btn-crud-dois{
+    margin-left: 40px;
+   
+}
+
+
+
+.one-table{
+ margin-left: 70px;
+ margin-top: 40px;
+}
+
+thead th.detail{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+thead th.id{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+thead th.name{
+    font-size: 19px;
+    font-weight: bold;
+}
+
+thead th{
+    border-bottom: 1px solid black !important;
+}
+
+tbody th{
+    border-bottom: 1px solid #D9D9D9 !important;
+    
+}
+
+tbody  td{
+    border-bottom: 1px solid #D9D9D9 !important;
+    
+}
+
+
+.fixed-icon{
+    position: fixed;
+    z-index: 1000;
+}
+
+
+.bloco1{
+    margin-top: 10px;
+    margin-left: 25px;
+    width: 450px;
+    height: 48px;
+}
+
+
+.linha1{
+    border-bottom: 1px solid #ccc;
+}
+
+
+.input-linha2{
+    width: 300px;
+
+}
+
+.limite-input{
+    height: 48px;
+    margin-left: 20px; 
+}
+
+
+.bloco2{
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 450px;
+    height: 48px;
+}
+
+
+.btn-adc{
+    margin-left: 10px;
+    padding: 20px 10px;
+    height: 48px;
+}
+
+.btn-adc-mod{
+    height: 45px;
+    width: 150px;
+}
+
+.linha2{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    
+ }
+
+
+ .left-div, .right-div{
+  flex: 1;
+  padding: 0px 5px;
+  height: 100%;
+  box-sizing: border-box;
+ }
+
+ .table-margem-btn{
+    margin-bottom: 20px;
+    max-height: 250px;
+ }
+
+ 
+
+ .btn-cancelar{
+    height: 48px;
+    margin-right: 10px;
+    padding: 10px 20px;
+ }
+
+ .btn-adc-promot{
+    height: 48px;
+    padding: 10px 50px;
+ }
+
+ @media (max-width: 768px) {
+  
+
+    .mdc-dialog__content {
+      flex-direction: column;
+     
+    }
+
+    .right-div{
+        margin-top: 20px;
+    }
+
+    .left-div{
+        width: 100%;
+        margin-right: 70px;
+    }
+  
+    
+    .right-div {
+    
+      width: 100%;
+    }
+    
+    .div-input1{
+        height: 600px;
+    }
+   
+    .bloco1,
+    .bloco2,
+    .limite-input {
+      width: 80%;
+      
+    }
+  
+    .btn-adc-mod{
+        margin-bottom: 20px;
+        margin-top: 10px;
+    }
+
+    .btn-adc,
+    .btn-cancelar,
+    .btn-adc-promot {
+      margin: 10px;
+      padding: 10px;
+      width: 90%;
+      text-align: center;
+    }
+  }
+
+
+@media(max-width:768px){
+
+    .div-logo{
+        justify-content: center; /* Centralizar o logo verticalmente */
+        padding: 10px 30px;
+    }
+
+
+    .div-logo img{
+        width: 50%;
+        height: 30px;
+    }
+
+    .div-logo .logo-seta{
+       display: flex;
+        width: 32px;
+        
+    }
+
+    .div-logo .h2-p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 12px;
+        padding: 0;
+        margin-left: 20px;
+    }
+
+
+
+    .pai-menu{
+        display: none;
+       
+    }
+
+    .pai-menu-mobile .mobile-menu{
+        display: block;
+    }
+
+    .mobile-menu button{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+       padding: 10px 0;
+    }
+    
+    .mobile-menu-button{
+        display: block;
+       position: absolute;
+    }
+
+
+    
+.content-options{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-bottom: 1px solid #D9D9D9;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+}
+
+
+
+.content-um{
+    padding: 10px 60px;
+    width: 100%;
+}
+
+.content-um h2{
+    font-size: 14px;
+}
+
+.content-dois{
+  padding: 0px;
+  margin-bottom: 21px;
+  
+}
+
+.content-dois h2{
+    font-size: 14px;
+}
+
+.content-dois p {
+    margin-top: 20px;
+    margin-right: 40px;
+    padding: 3px 0;
+    font-size: 13px;
+    text-align: center;
+}
+
+.input-btns{
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.input-btns input{
+    padding: 8px;
+    width: 300px;
+    height: 38px;
+    border-radius: 8px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    margin-right: 1px;
+    margin-bottom: 5px;
+}
+
+.input-btns button{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    display: block;
+}
+
+.input-btns .btn-edit{
+    margin-left: 20px;
+}
+  
+.input-btns {
+    display: block;
+    align-items: center; /* Centraliza verticalmente os elementos */
+}
+
+.container-content-main{
+    display: block;
+    width: 100%;
+}
+
+
+.input-svg {
+    position: relative;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+.input-svg input[type=text] {
+    padding-right: 40px; /* Espaço para o ícone */
+}
+
+.input-svg svg {
+    position: absolute;
+    left: 280px; 
+    width: 40px;
+    height: auto;
+    top: 5px;
+   
+}
+
+.input-svg .custom-button {
+    border: none;
+    cursor: pointer;
+}
+
+
+.mdc-data-table{
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 400px;
+    
+   }
+
+   .btn-crud-dois{
+    margin-left: 0px;
+   
+}
+
+.edit-dois{
+    margin-left: 0px;
+}
+
+
+}
+
+/*COMEÇANDO ESTILIZAÇÃO TELA DETALHE-PATROCINADORES*/
+
+.pai-menu-detail{
+    background-color: #D9D9D9;
+    height:auto;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 6px;
+    width: 320px;
+}
+
+.btn-solo{
+    display: flex;
+    padding: 0px 30px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.label-limite-table{
+    width: 120px;
+}
+
+.input-limite-table{
+    border-radius: 10px;
+}
+
+
+.table3-ajustes{
+    width: 75%;
+   
+}
+
+
+@media (max-width:768px){
+    .pai-menu-detail{
+        display: none;
+    }
+
+    .table3-ajustes{
+        width: 100%;
+       
+    }
+}
+
+
+/*COMEÇANDO ESTILIZAÇÃO MODAL EDITAR ELEMENTOS */
+
+.check-div1{
+    width: 100%;
+    padding: 30px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    
+}
+
+.h2-modal{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.div-check{
+    margin-right: 50px;
+    margin-left: 30px;
+}
+
+.label-check{
+    font-size: 17px;
+    width: 100%;
+}
+
+
+
+.inputs-div2-content{
+    width: 450px;
+    height: 48px;
+   margin-bottom: 15px;
+}
+
+.input-group{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+
+
+.input-group-left,
+.input-group-right {
+  width: 49%; 
+}
+
+.input-group-left {
+  text-align: right;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 0 60px;
+    
+}
+
+
+.div3-btns-modal-button{
+    width:225px;
+   height: 48px;
+   border-radius: 8px;
+   font-weight: bold;
+   
+}
+
+@media (max-width: 768px) {
+    @media (max-width: 767px) {
+
+        
+.check-div1{
+    width: 100%;
+    padding: 30px 30px;
+    font-size: 17px;
+    font-weight: bold;
+    display: block;
+    align-items: center;
+  flex-direction: column;
+  justify-content: center;
+    margin-bottom: 30px;
+    
+}
+
+.div-check{
+    margin-bottom: 20px;
+}
+
+.div-check3{
+ margin-left: 31px;
+}
+
+
+.inputs-div2-content{
+    width: 350px;
+    height: 48px;
+   margin-bottom: 10px;
+   align-items: center;
+}
+
+.input-group-left {
+    text-align: left;
+  }
+  
+
+        .input-group {
+          flex-direction: column;
+          align-items: center;
+          margin-bottom: 20px;
+        }
+      
+        .input-group-left,
+        .input-group-right {
+          width: 100%; 
+          margin-bottom: 1px; 
+        }
+      }
+
+    .div3-btns-modal{
+       display: flex;
+       flex-direction: center;
+        padding: 1px 10px;
+        align-items: center;
+     
+    }
+
+    .div3-btns-modal-button{
+        padding: 10px 0px;
+        width: 110px;
+       height: 48px;
+       border-radius: 8px;
+       font-weight: bold;
+    }
+  }
+
+
+
+  /* COMEÇANDO MODAL +LIMITE */
+
+  .modal-limite {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+   }
+   
+   
+   .modal-limite-tam{
+     margin-bottom: 20px;
+     width: 450px;
+     height: 48px;
+     border-radius: 8px;
+   }
+   
+   .modal-limite-inpt{
+     margin-top: 5px;
+     width: 220px;
+     height: 48px;
+   }
+   
+   .modal-limite-btn{
+     width: 220px;
+     height: 48px;
+   }
+   
+   .grid-container-limite{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     grid-gap: 10px;
+   }
+
+   #meu-modal2 .mdc-dialog__surface {
+    max-width: 50%; /* Defina a largura máxima que você deseja */
+  }
+
+
+  @media (max-width: 600px) {
+   
+    #meu-modal2 .mdc-dialog__surface {
+        max-width: 100%; /* Defina a largura máxima que você deseja */
+      }
+  
+    .modal-limite-tam,
+    .modal-limite-inpt,
+    .modal-limite-btn {
+      max-width: 100%; /* Largura total em dispositivos móveis */
+    }
+    
+   .grid-container-limite{
+    display: block;
+    
+  }
+
+  .modal-limite-inpt{
+    margin-top: 5px;
+    width: 325px;
+    height: 48px;
+  }
+  
+  .modal-limite-btn{
+    margin-top: 20px;
+    width: 325px;
+    height: 48px;
+  }
+
+  .h2-modal2{
+  margin-left: 30px;
+  }
+
+
+  
+  }
+
+
+/*COMEÇANDO AQUI TELA RELATORIOS*/
+  
+.select-relatorio-btn{
+    padding: 10px 20px 30px 30px;
+   
+}
+
+
+.select-relatorio{
+    width: 700px;
+    height: 48px;
+}
+
+.btn-relatorio{
+    padding: 30px;
+}
+
+.btn-relatorio-interno{
+    height: 48px;
+    padding: 10px 20px;
+}
+
+.btn-menu-web{
+    padding: 5px 140px 5px 10px;
+  }
+
+
+  .pai-quantitativo{
+    border-top: 1px solid #D9D9D9;
+    padding: 20px 30px;
+  }
+
+  .h2-quantitativo{
+    font-size: 20px;
+  }
+
+  .select-quantitativo{
+    padding: 20px 10px;
+    width: 350px;
+    height: 48px;
+  }
+
+
+.td-tbody-relatorios{
+    border-right: 1px solid #000000;
+    
+}
+
+
+
+  @media (max-width: 768px){
+    
+.select-relatorio{
+   width: 350px;
+    height: 48px;
+}
+
+.btn-relatorio-interno{
+    width: 350px;
+    height: 48px;
+    padding: 10px 20px;
+}
+
+
+.h2-quantitativo{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .select-quantitativo{
+    padding: 20px 10px;
+    width: 350px;
+    height: 48px;
+  }
+  }
