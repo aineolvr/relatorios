@@ -1271,20 +1271,21 @@ tbody  td{
    }
 
    #meu-modal2 .mdc-dialog__surface {
-    max-width: 50%; /* Defina a largura máxima que você deseja */
+    max-width: 50%; 
   }
 
 
   @media (max-width: 600px) {
    
     #meu-modal2 .mdc-dialog__surface {
-        max-width: 100%; /* Defina a largura máxima que você deseja */
+        max-width: 100%; 
       }
   
     .modal-limite-tam,
     .modal-limite-inpt,
     .modal-limite-btn {
-      max-width: 100%; /* Largura total em dispositivos móveis */
+      max-width: 90%; 
+      
     }
     
    .grid-container-limite{
@@ -1364,6 +1365,11 @@ tbody  td{
 
 
   @media (max-width: 768px){
+
+    .custom-button-mobile{
+       width: 100%;
+      
+    }
     
 .select-relatorio{
    width: 350px;
